@@ -3,13 +3,6 @@
 PHYSICS-INFORMED PROJECTILE MOTION PREDICTOR
 Interactive Streamlit Dashboard
 =============================================================================
-Senior Developer Notes:
-- This app sits on TOP of the existing ML pipeline (models/, src/, results/)
-- It imports trained .pkl models and runs both physics equations AND ML models
-- Zero retraining needed — models are loaded once at startup via @st.cache_resource
-- All physics is computed in pure NumPy for speed
-- Plotly is used for interactive charts (hover, zoom, pan)
-=============================================================================
 """
 
 import streamlit as st
