@@ -288,6 +288,4 @@ If you found this project useful:
 
 ### 🚀 Physics + Machine Learning + Interactive Visualization
 
-Built with ❤️ using Python, Streamlit and Scikit-Learn
-
 </div>
