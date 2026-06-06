@@ -1,128 +1,147 @@
-🚀 Physics-Informed Projectile Motion Predictor
+# 🚀 Physics-Informed Projectile Motion Predictor
 
-An interactive Machine Learning + Physics web application that compares classical projectile motion equations with data-driven ML models in real time.
+<div align="center">
 
-🌐 Live Demo: https://projectilemotionpredictor.streamlit.app/
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red?style=for-the-badge&logo=streamlit)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-green?style=for-the-badge)
+![Physics](https://img.shields.io/badge/Physics-Projectile%20Motion-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-📖 Overview
+### Bridging Classical Physics and Machine Learning Through Interactive Visualization
 
-This project combines Classical Mechanics and Machine Learning to predict projectile trajectories and analyze model performance.
+🌐 **Live Demo:** https://projectilemotionpredictor.streamlit.app/
 
-Users can adjust launch parameters such as:
+</div>
 
-Initial Velocity (V₀)
-Launch Angle (θ)
+---
 
-and instantly compare:
+## 📖 Overview
 
-Physics-based predictions
-Machine Learning predictions
-Model performance metrics
-Error analysis visualizations
-Research insights
+This project combines **Classical Mechanics** and **Machine Learning** to predict projectile trajectories and compare data-driven predictions against analytical physics equations.
 
-The application demonstrates how machine learning models can approximate physical systems while providing intuitive visual comparisons against analytical solutions.
+Users can interactively modify launch conditions and instantly visualize:
 
-✨ Features
-🎯 Physics Engine
+- Physics-based predictions
+- Machine Learning predictions
+- Model performance metrics
+- Error analysis
+- Research insights
+- Interactive trajectory visualizations
 
-Computes projectile motion using standard kinematic equations:
+The project demonstrates how machine learning models can learn and approximate physical systems while remaining interpretable through direct comparison with established physics laws.
 
-Maximum Height
-Time of Flight
-Horizontal Range
-Horizontal Velocity Component
-Vertical Velocity Component
-🤖 Machine Learning Models
+---
 
-The application includes four trained models:
+## ✨ Key Features
 
-Model	Purpose
-Linear Regression	Baseline prediction
-Polynomial Regression (Degree 2)	Non-linear approximation
-Polynomial Regression (Degree 3)	Higher-order approximation
-Random Forest Regressor	Ensemble learning model
-📊 Interactive Visualizations
-Projectile Trajectory Plot
-ML vs Physics Comparison
-Error Heatmaps
-Model Performance Dashboard
-Feature Analysis Charts
-Research Insights Panel
-📈 Performance Evaluation
-MAE (Mean Absolute Error)
-RMSE (Root Mean Squared Error)
-R² Score
-Comparative Model Ranking
-🌐 Web Application
-Responsive UI
-Real-time Predictions
-Interactive Controls
-Professional Dashboard Design
-🛠️ Tech Stack
-Programming Language
-Python
-Data Science & ML
-NumPy
-Pandas
-Scikit-Learn
-Joblib
-Visualization
-Plotly
-Matplotlib
-Seaborn
-Web Framework
-Streamlit
-🧠 Physics Equations Used
-Horizontal Range
-R=
-g
-v
-0
-2
-	​
+### 🎯 Physics Engine
 
-sin(2θ)
-	​
+Calculates projectile motion using analytical kinematic equations:
 
-Maximum Height
-H=
-2g
-v
-0
-2
-	​
+- Maximum Height
+- Time of Flight
+- Horizontal Range
+- Horizontal Velocity Component
+- Vertical Velocity Component
 
-sin
-2
-(θ)
-	​
+---
 
-Time of Flight
-T=
-g
-2v
-0
-	​
+### 🤖 Machine Learning Models
 
-sin(θ)
-	​
+The application includes multiple trained regression models:
 
+| Model | Purpose |
+|---------|---------|
+| Linear Regression | Baseline prediction |
+| Polynomial Regression (Degree 2) | Non-linear approximation |
+| Polynomial Regression (Degree 3) | Higher-order approximation |
+| Random Forest Regressor | Ensemble learning |
 
-where:
+---
 
-v
-0
-	​
+### 📊 Interactive Visualizations
 
- = Initial Velocity
-θ = Launch Angle
-g = Gravitational Acceleration (9.81 m/s²)
-📂 Project Structure
+- Trajectory Plot
+- ML vs Physics Comparison
+- Error Heatmaps
+- Model Performance Dashboard
+- Research Insights
+- Statistical Analysis Charts
+
+---
+
+### 📈 Model Evaluation Metrics
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+- Comparative Model Ranking
+
+---
+
+## 🧠 Physics Equations
+
+### Horizontal Range
+
+\[
+R = \frac{v_0^2 \sin(2\theta)}{g}
+\]
+
+### Maximum Height
+
+\[
+H = \frac{v_0^2 \sin^2(\theta)}{2g}
+\]
+
+### Time of Flight
+
+\[
+T = \frac{2v_0 \sin(\theta)}{g}
+\]
+
+Where:
+
+| Symbol | Description |
+|----------|-------------|
+| \(v_0\) | Initial Velocity |
+| \(\theta\) | Launch Angle |
+| \(g\) | Gravitational Acceleration (9.81 m/s²) |
+
+---
+
+## 🛠️ Tech Stack
+
+### Programming
+
+- Python
+
+### Machine Learning
+
+- Scikit-Learn
+- NumPy
+- Pandas
+- Joblib
+
+### Visualization
+
+- Plotly
+- Matplotlib
+- Seaborn
+
+### Web Framework
+
+- Streamlit
+
+---
+
+## 📂 Project Structure
+
+```text
 projectile_motion_predictor/
 │
 ├── data/
-│   └── Generated training datasets
+│   └── Generated datasets
 │
 ├── models/
 │   ├── LinearRegression_x.pkl
@@ -143,65 +162,132 @@ projectile_motion_predictor/
 │
 ├── requirements.txt
 └── README.md
-⚙️ Installation
-Clone Repository
+```
+
+---
+
+## 🚀 Installation
+
+### Clone Repository
+
+```bash
 git clone https://github.com/nutanshinde1/projectile_motion_predictor.git
 cd projectile_motion_predictor
-Create Virtual Environment
+```
+
+### Create Virtual Environment
+
+```bash
 python -m venv .venv
-Activate Environment
+```
 
-Windows:
+### Activate Environment
 
+#### Windows
+
+```bash
 .venv\Scripts\activate
+```
 
-Linux/Mac:
+#### Linux / macOS
 
+```bash
 source .venv/bin/activate
-Install Dependencies
+```
+
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
-Run Application
+```
+
+### Run Application
+
+```bash
 streamlit run src/app.py
-🚀 Deployment
+```
 
-The project is deployed using Streamlit Community Cloud.
+---
 
-Live Application
+## 🌐 Live Application
 
-🔗 https://projectilemotionpredictor.streamlit.app/
+### 🔗 Demo
 
-🎓 Learning Outcomes
+https://projectilemotionpredictor.streamlit.app/
+
+---
+
+## 📊 Dataset Information
+
+The models were trained using synthetic projectile motion data generated from analytical physics equations.
+
+### Training Dataset
+
+- 10,000+ Samples
+- Variable Initial Velocities
+- Variable Launch Angles
+- Physics-based Ground Truth Labels
+
+---
+
+## 🎓 Learning Outcomes
 
 This project demonstrates:
 
-Classical Physics Modeling
-Machine Learning Regression
-Feature Engineering
-Model Evaluation
-Data Visualization
-Streamlit Deployment
-Software Engineering Practices
-End-to-End ML Application Development
-🔮 Future Enhancements
-Air Resistance Modeling
-Neural Network Predictions
-3D Projectile Simulations
-Wind Effect Analysis
-Multi-Object Simulations
-Real Experimental Data Integration
-Physics-Informed Neural Networks (PINNs)
-👩‍💻 Author
+✅ Classical Mechanics
 
-Nutan Shinde
+✅ Data Generation
 
-⭐ Support
+✅ Machine Learning Regression
+
+✅ Feature Engineering
+
+✅ Model Evaluation
+
+✅ Data Visualization
+
+✅ Streamlit Development
+
+✅ Cloud Deployment
+
+✅ End-to-End ML Pipeline
+
+---
+
+## 🔮 Future Improvements
+
+- Air Resistance Simulation
+- Wind Effect Modeling
+- 3D Projectile Visualization
+- Neural Network Models
+- Physics-Informed Neural Networks (PINNs)
+- Real Experimental Data Integration
+- Multi-Object Simulations
+
+---
+
+## 👩‍💻 Author
+
+### Nutan Shinde
+
+🔗 GitHub: https://github.com/nutanshinde1
+
+---
+
+## ⭐ Support
 
 If you found this project useful:
 
-⭐ Star the repository
+- ⭐ Star the repository
+- 🍴 Fork the repository
+- 🚀 Share the live demo
 
-🍴 Fork the repository
+---
 
-📢 Share the live demo
+<div align="center">
 
-Bridging the gap between Physics and Machine Learning through interactive visualization and predictive modeling. 🚀📈
+### 🚀 Physics + Machine Learning + Interactive Visualization
+
+Built with ❤️ using Python, Streamlit and Scikit-Learn
+
+</div>
