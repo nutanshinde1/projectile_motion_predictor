@@ -280,7 +280,6 @@ If you found this project useful:
 
 - ⭐ Star the repository
 - 🍴 Fork the repository
-- 🚀 Share the live demo
 
 ---
 
